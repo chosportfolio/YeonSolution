@@ -1,0 +1,118 @@
+@charset "utf-8";
+#content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#content {
+    padding-bottom: 50px;
+}
+#content .wrap > h1 {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#content .wrap > p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#content .wrap > ul:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.reviewList {
+    display: none;
+    width: 285px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    transition-duration: 0.2s;
+}
+.reviewList:nth-child(4),
+.reviewList:nth-child(8),
+.reviewList:nth-child(12),
+.reviewList:nth-child(16),
+.reviewList:nth-child(20) {
+    margin-right: 0px;
+}
+.reviewActive {
+    display: block;
+}
+.reviewList:hover {
+    border: 1px solid #dddddd00;
+    box-shadow: 0px 0px 10px #d8d5d5;
+}
+.imgWrap {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+.imgWrap img {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.textWrap {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.textWrap span {
+    display: block;
+    font-size: 15px;
+    color: #b2273f;
+    margin-bottom: 5px;
+}
+.textWrap h1 {
+    overflow: hidden;  		
+    text-overflow: ellipsis;  	
+    white-space: nowrap; 		
+    word-break:break-all;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.textWrap p {
+    color: #000;
+    font-size: 14px;
+}
+#page {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page li {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+#page li a {
+    display: block;
+    width: 40px;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+#page li:first {
+    margin-left: 0px;
+}
+#page .active a {
+    color: #fff;
+    background-color: #000;
+}
